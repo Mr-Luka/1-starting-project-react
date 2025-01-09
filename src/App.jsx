@@ -8,6 +8,11 @@ import TabButton from "./components/TabButton.jsx";
 
 
 function App() {
+
+  function handleClick () {
+        console.log('Button clicked again');
+    }
+
   return (
     <div>
       <Header />
@@ -23,10 +28,10 @@ function App() {
       </section>
       <section id="examples">
         <menu>
-          <TabButton>Components</TabButton>
-          <TabButton>JSX</TabButton>
-          <TabButton>Props</TabButton>
-          <TabButton>State</TabButton>
+          <TabButton onSelect={handleClick}>Components</TabButton>
+          <TabButton onSelect={handleClick}>JSX</TabButton>
+          <TabButton onSelect={handleClick}>Props</TabButton>
+          <TabButton onSelect={handleClick}>State</TabButton>
         </menu>
       </section>
       </main>
