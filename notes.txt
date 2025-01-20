@@ -1,0 +1,27 @@
+What I did here?
+
+1) Separated Header into a different folder and css for header as well
+2) made it dymanic by importing a picture into a variable and putting into src= {}
+3) Always import pictures into variables 
+4) CoreConcepts I deconstructed props, and now I can directly write {title, description, image}
+    instad of props.image, props.title...
+5) Button, 
+    {children} as a deconstructed prop, so I can have text in between <button>TEXT<button>
+    className={isSelected ? 'active' : null} 
+    onClick={onSelect}
+    and then in the app used them as:
+    isSelected={selectedTopic === 'components'} 
+    onSelect={() => handleSelect('components')}
+    making it:
+    <TabButton 
+        isSelected={selectedTopic === 'components'} 
+        onSelect={() => handleSelect('components')}>Components</TabButton>
+
+6) Imported {useState} from 'react' and used it to select selectedTopic and setSelectedTopic
+7) made a function that will handle click, and inside is setSelectedTopic accepts (selectedButton)
+8) made let variable saying: let tabContent = <p>Please select a topic.</p>;
+9) conditional statement asking if there is a selectedTopic, change tabContent to <..... and show it in menu
+10) imported CORE_CONCEPTS and looped them with map where it will return the 
+    <CoreConcept key={conceptItem.title} {...conceptItem} /> 
+    meaning it will automatically generate all the core concepts without doing them all individually
+    
