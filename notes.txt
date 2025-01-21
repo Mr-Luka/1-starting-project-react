@@ -12,7 +12,7 @@ What I did here?
     and then in the app used them as:
     isSelected={selectedTopic === 'components'} 
     onSelect={() => handleSelect('components')}
-    making it:
+    making it: 
     <TabButton 
         isSelected={selectedTopic === 'components'} 
         onSelect={() => handleSelect('components')}>Components</TabButton>
@@ -24,4 +24,6 @@ What I did here?
 10) imported CORE_CONCEPTS and looped them with map where it will return the 
     <CoreConcept key={conceptItem.title} {...conceptItem} /> 
     meaning it will automatically generate all the core concepts without doing them all individually
-    
+11) instead of <div> </div> I can just use: <> </>
+12) Event the smaller components like CoreCocenpt and TabButton we made separate files and put
+    them there called CoreConcepts and Examples.jsx and transfered their functionality and structure in there.
