@@ -32,4 +32,6 @@ What I did here?
     with {...props} we are using it to GROUP some data into an object
     so we can use it in the inner component like: <div {...props}>...</div>
     and it will automatically get all the props from the parent component
-    
+14) Working with multiple JSX slots, this time we made a function Tabs which will be reusable component
+    and put it inside Examples.jsx, we populated Tabs with props named children and buttons.
+    {children} for the content inside html element, and {buttons} to replace all the buttons TabButton
