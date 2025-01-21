@@ -27,3 +27,9 @@ What I did here?
 11) instead of <div> </div> I can just use: <> </>
 12) Event the smaller components like CoreCocenpt and TabButton we made separate files and put
     them there called CoreConcepts and Examples.jsx and transfered their functionality and structure in there.
+13) ...props
+    Using spread operator inside when destructuring inside props function, we forward it into some inner element.
+    with {...props} we are using it to GROUP some data into an object
+    so we can use it in the inner component like: <div {...props}>...</div>
+    and it will automatically get all the props from the parent component
+    
